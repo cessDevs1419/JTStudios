@@ -56,7 +56,8 @@
 <style scoped>
     .navbar{
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 50%, rgba(0, 0, 0, 0.00) 100%);
-    }
+        z-index: 1099;
+      }
     
     .navbar-container {
         transition: .3s ease-in-out;

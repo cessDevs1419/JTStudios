@@ -14,6 +14,7 @@ body{
   margin: 0;
 }
 
+
 .primary-bg{
   background-color: var(--primary-color);
 }
@@ -23,10 +24,18 @@ body{
 .tertiary-bg{
   background-color: var(--tertiary-color);
 }
-.accent-color{
+.accent-bg{
   background-color: var(--accent-color);
 }
-
+.accent-border{
+  border-color: var(--accent-color);
+}
+.accent-bg{
+  background: var(--accent-color);
+}
+.accent-color{
+  color: var(--accent-color);
+}
 .primary-font{
   color: var(--primary-font);
 }
