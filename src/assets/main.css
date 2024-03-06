@@ -61,6 +61,10 @@ body{
   color: var(--primary-color);
 }
 
+.dark-grey-bg{
+  background-color: var(--dark-grey);
+}
+
 .cursor-pointer{
   cursor: pointer;
 }

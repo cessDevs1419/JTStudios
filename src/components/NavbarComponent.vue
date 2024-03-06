@@ -24,21 +24,21 @@
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg position-fixed p-0 w-100" >
+    <nav class="navbar navbar-expand-lg position-fixed p-0 w-100" data-bs-theme="dark" >
         <div class="navbar-container container-fluid py-2" :class="{ 'primary-bg': isScrolled }">
           <IconLogo></IconLogo>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav w-100 d-flex justify-content-lg-end justify-content-start px-3 ">
-              <li class="nav-item mx-3">
+          <div class="collapse navbar-collapse  mx-0 px-0" id="navbarNav">
+            <ul class="navbar-nav w-100  d-flex justify-content-lg-end justify-content-start px-3 ">
+              <li class="nav-item mx-lg-3 mx-0">
                 <router-link to="/" class="nav-link text-white px-1">Home</router-link>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item mx-lg-3 mx-0">
                 <router-link to="/about" class="nav-link text-white px-1">About Us</router-link>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item mx-lg-3 mx-0">
                 <router-link to="/games" class="nav-link text-white px-1">Our Games</router-link>
               </li>
             </ul>
@@ -52,7 +52,9 @@
         background: linear-gradient(180deg, rgba(30, 30, 30, 0.75) 50%, rgba(0, 0, 0, 0.00) 100%);
         z-index: 1099;
       }
-    
+    .nav-item{
+      width: fit-content;
+    }
     .navbar-container {
         transition: .3s ease-in-out;
     }
