@@ -3,8 +3,10 @@ import HomeView from '../views/main/HomeView.vue'
 
 import AboutView from '@/views/main/AboutView.vue'
 import NewGameView from '@/views/admin/NewGameView.vue'
-import AdminRoutingView from '@/views/admin/AdminRoutingView.vue'
 import DashboardView from '@/views/admin/DashboardView.vue'
+import ContentManagementView from '@/views/admin/ContentManagementView.vue'
+import SiteSettingsView from '@/views/admin/SiteSettingsView.vue'
+import OurGames from '@/views/main/OurGames.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,22 +19,40 @@ const router = createRouter({
     {
 		path: '/about',
 		name: 'about',
-		components: AboutView
+		component: AboutView
+    },
+	{
+		path: '/games',
+		name: 'games',
+		component: OurGames
     },
     {
 		path: '/admin',
-		component: AdminRoutingView,
+		name: 'dashboard',
+		component: DashboardView,
 		children: [
 			{
-				path: '',
-				component: DashboardView,
-			},
-			{
-				path: '/add-game',
+				path: 'add-game',
+				name: 'add-game',
 				component: NewGameView,
-			}
+			},
 		]
-    }
+    },
+	{
+		path: '/admin/content-management',
+		name: 'content-management',
+		component: ContentManagementView,
+		children: [
+		]
+    },
+	{
+		path: '/admin/site-settings',
+		name: 'site-settings',
+		component: SiteSettingsView,
+		children: [
+		]
+    },
+	
   ]
 })
 

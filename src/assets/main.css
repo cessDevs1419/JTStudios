@@ -28,7 +28,17 @@ body{
 }
 
 .primary-font{
-  background-color: var(--primary-font);
+  color: var(--primary-font);
 }
 
+.secondary-font{
+  color: var(--secondary-font);
+}
 
+.tertiary-font{
+  color: var(--tertiary-font);
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
