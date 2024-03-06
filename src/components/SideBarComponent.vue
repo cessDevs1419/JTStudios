@@ -1,3 +1,6 @@
+<script setup>
+
+</script>
 <script>
     export default {
     data() {
@@ -16,7 +19,7 @@
 <template>
     <div class="sidebar secondary-bg border-0" :class="{ 'sidebar-active': isSidebarActive }" >
         <button @click="toggleSidebar" class="bg-transparent border-0 p-0 w-100">
-            <div class=" d-flex justify-content-around align-items-center border bottom-divider border-top-0 border-start-0 border-end-0 p-5 px-md-4">
+            <div class=" d-flex justify-content-around align-items-center border border-top-0 border-start-0 border-end-0 p-5 px-md-4">
                 <div class="logo">
     
                 </div>

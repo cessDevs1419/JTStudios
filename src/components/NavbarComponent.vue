@@ -1,3 +1,7 @@
+
+<script setup>
+  import IconLogo from './icons/IconLogo.vue';
+</script>
 <script>
   export default {
     data() {
@@ -22,17 +26,7 @@
 <template>
     <nav class="navbar navbar-expand-lg position-fixed p-0 w-100" >
         <div class="navbar-container container-fluid py-2" :class="{ 'primary-bg': isScrolled }">
-          <a class="text-decoration-none logo-container">
-            <div class="w-100 d-flex justify-content-around align-items-center ">
-                <div class="logo">
-
-                </div>
-                <div class="divider"></div>
-                <div class="title">
-                    <h3 class=" text-white">JT STUDIOS</h3>
-                </div>
-            </div>
-          </a>
+          <IconLogo></IconLogo>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -61,26 +55,6 @@
     
     .navbar-container {
         transition: .3s ease-in-out;
-    }
-
-    .logo-container{
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .logo{
-        background-image: url('../assets/images/logo.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 48px;
-        height: 45px;
-    }
-
-    .divider{
-        border: 1px solid grey;
-        width: 1px;
-        height: 2.5rem;
     }
 
     .router-link-active{

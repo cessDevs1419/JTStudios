@@ -48,6 +48,10 @@ body{
   color: var(--tertiary-font);
 }
 
+.dark-font{
+  color: var(--primary-color);
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
