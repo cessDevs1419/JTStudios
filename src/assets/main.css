@@ -1,0 +1,34 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+#app {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body{
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+}
+
+.primary-bg{
+  background-color: var(--primary-color);
+}
+.secondary-bg{
+  background-color: var(--secondary-color);
+}
+.tertiary-bg{
+  background-color: var(--tertiary-color);
+}
+.accent-color{
+  background-color: var(--accent-color);
+}
+
+.primary-font{
+  background-color: var(--primary-font);
+}
+
+
