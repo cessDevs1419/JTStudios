@@ -72,3 +72,12 @@ body{
 .sans-font {
   font-family: "Source Sans 3", sans-serif;
 }
+
+::placeholder {
+  color: var(--primary-font);
+  opacity: 1; 
+}
+
+::-ms-input-placeholder { 
+  color: var(--primary-font);
+}

@@ -140,7 +140,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <TemplateContainer class="mb-5">
+    <TemplateContainer class="my-5">
       <div class="row w-100 m-auto">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div class="title-container mb-5">
@@ -220,7 +220,23 @@
             </ul>
           </div>
           <div class="col-lg-6">
-
+            <form class="p-4 sans-font text-white">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control text-white p-2 rounded-0 bg-transparent" >
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control text-white p-2 rounded-0 bg-transparent">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control rounded-0 text-white p-2 bg-transparent"  rows="3"></textarea>
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <button class="text-decoration-none btn btn-danger accent-border accent-bg rounded-0 px-5 btn-lg mx-auto" >SUBMIT</button>
+              </div>
+            </form>
           </div>
         </div>
       </TemplateContainer>
@@ -284,4 +300,5 @@
     min-width: 200px;
     height: 300px;
   }
+
 </style>
