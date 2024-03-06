@@ -40,11 +40,11 @@
   <NavbarComponent v-if="showNavbar" >
   </NavbarComponent>
 
-  <div class="d-flex">
+  <div class="d-flex mt-0 p-0">
     <SideBarComponent ref="sidebar" v-if="!showNavbar" >
     </SideBarComponent>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid mt-0 p-0">
       <PageHeaderComponent v-if="!showNavbar" @show-side-bar="showSidebar" >
       </PageHeaderComponent>
   
