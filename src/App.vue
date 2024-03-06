@@ -4,6 +4,7 @@
   import NavbarComponent from './components/NavbarComponent.vue';
   import SideBarComponent from './components/SideBarComponent.vue';
   import PageHeaderComponent from './components/PageHeaderComponent.vue';
+  import FooterComponent from './components/FooterComponent.vue';
 
   const showNavbar = ref(true);
   const router = useRouter();
@@ -51,5 +52,7 @@
       <RouterView />
     </div>
   </div>
+
+  <FooterComponent></FooterComponent>
   
 </template>

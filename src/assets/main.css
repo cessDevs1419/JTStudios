@@ -1,5 +1,6 @@
 @import './base.css';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 #app {
   font-family: "Oswald", sans-serif;
@@ -48,10 +49,22 @@ body{
   color: var(--tertiary-font);
 }
 
+.accent-font {
+  color: var(--accent-color);
+}
+
+.footer-bg {
+  background-color: #252525;
+}
+
 .dark-font{
   color: var(--primary-color);
 }
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.sans-font {
+  font-family: "Source Sans 3", sans-serif;
 }
