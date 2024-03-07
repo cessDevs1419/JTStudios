@@ -91,7 +91,7 @@
     }
     .footer-container a {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 14px;
         color: #FFF;
     }
 
