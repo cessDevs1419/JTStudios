@@ -98,6 +98,7 @@
 
 <template >
   <div class="primary-bg pb-5">
+    <!-- Hero Section -->
     <div id="carouselExample" class="carousel slide hero-container" v-if="heroSectionData">
       <div class="carousel-inner"> 
         <div class="carousel-item " :class="{'active' : index === 0}" v-for="(items, index) in heroSectionData" :key="index">
@@ -132,6 +133,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- About Us -->
     <TemplateContainer class="my-5">
       <div class="row w-100 m-auto">
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -155,6 +157,7 @@
         </div>
       </div>
     </TemplateContainer>
+    <!-- Our Games -->
     <TemplateContainer class="mb-5">
       <div class="row w-100 m-auto mb-3">
         <div class="col-lg-6 mb-4 mb-lg-0">
@@ -183,6 +186,7 @@
         </div>
       </div>
     </TemplateContainer>
+    <!-- Contact Us -->
     <div class="w-100 py-5 dark-grey-bg">
       <TemplateContainer >
         <div class="row w-100 m-auto mb-3">
