@@ -28,7 +28,7 @@ const router = createRouter({
     },
     {
 		path: '/admin',
-		name: 'dashboard',
+		name: 'Overview',
 		component: DashboardView,
 		children: [
 			{
@@ -40,7 +40,7 @@ const router = createRouter({
     },
 	{
 		path: '/admin/content-management',
-		name: 'content-management',
+		name: 'Content Management',
 		component: ContentManagementView,
 		children: [
 		]

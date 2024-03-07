@@ -1,4 +1,6 @@
-
+<script setup>
+    import IconLogo from './icons/IconLogo.vue';
+</script>
 
 <template>
     <div>
@@ -17,20 +19,18 @@
                 </button> -->
                 <button class="navbar-brand bg-transparent border-0 p-0 w-100 cursor-pointer btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
                     <div class="d-flex justify-content-between justify-content-md-around align-items-center ">
-                        <div class="logo">
-            
-                        </div>
-                        <div class="divider"></div>
-                        <div class="title">
-                            <h2 class=" text-white m-0">JT STUDIOS</h2>
-                        </div>
+                        <IconLogo></IconLogo>
                     </div>
                 </button>
 
                 <div class="body p-0">
                     <div class="title p-0 d-flex align-items-center primary-font">
                         <i class="bi my-0 bi-house-door fs-2 me-2 "></i>
-                        <h2 class="m-0">Overview</h2>
+                        <h2 class="m-0">
+                            <slot name="page-title">
+                                
+                            </slot>
+                        </h2>
                     </div>
                 </div>
             </div>

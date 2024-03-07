@@ -16,6 +16,7 @@
       showNavbar.value = !newValue.startsWith('/admin');
     }
   });
+
 </script>
 
 <script>
@@ -25,6 +26,7 @@
       SideBarComponent
     },
     methods: {
+      
     }
   }
 </script>
@@ -40,6 +42,8 @@
 
     <div class="container-fluid mt-0 p-0">
       <PageHeaderComponent v-if="!showNavbar" >
+        <template #page-title>
+        </template>
       </PageHeaderComponent>
   
       <RouterView />

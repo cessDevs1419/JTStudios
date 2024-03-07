@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid primary-bg h-100 px-4 border">
+    <div class="container-fluid primary-bg px-4 pb-4 border">
         <slot>
 
         </slot>
@@ -9,5 +9,6 @@
 <style scoped>
     div{
         padding-top: 9rem;
+        min-height: 100vh;
     }
 </style>

@@ -45,7 +45,7 @@ import IconLogo from './icons/IconLogo.vue';
                 </router-link>
             </div>
             <div class="dropdown mt-3 w-100">
-                <button @click="showMenu" class="btn btn-secondary p-3 px-4 bg-transparent border-0 rounded-2 w-100 d-flex align-items-center justify-content-between dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <button @click="showMenu" class="btn btn-secondary p-3 px-4 bg-transparent border-0 rounded-2 w-100 d-flex align-items-center justify-content-between dropdown-toggle" type="button" >
                 Game Management
                 </button>
                 <ul v-if="show" class=" border-0 mt-0 py-0 bg-transparent px-4 w-100">
@@ -71,7 +71,14 @@ import IconLogo from './icons/IconLogo.vue';
         height: 100vh;
     }
     
-    
+    .logo{
+        background-image: url('./src/assets/images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 48px;
+        height: 45px;
+    }
 
     .bottom-divider{
         border-color: var(--dark-grey) !important;

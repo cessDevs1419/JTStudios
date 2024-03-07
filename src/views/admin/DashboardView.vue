@@ -4,6 +4,8 @@
 </script>
 <template>
     <AdminContainer>
-        <div class="border h-100"></div>
+        <div class="border h-100">
+            
+        </div>
     </AdminContainer>
 </template>
