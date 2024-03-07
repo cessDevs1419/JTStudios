@@ -7,8 +7,8 @@ import IconLogo from './icons/IconLogo.vue';
     export default {
     data() {
         return {
-        isSidebarActive: false,
-        show: false
+            isSidebarActive: false,
+            show: false
         };
     },
     methods:{
@@ -86,7 +86,7 @@ import IconLogo from './icons/IconLogo.vue';
 
 	.router-link-active{
         background-color: var(--accent-color);
-		color: var(--secondary-font);
+		color: var(--secondary-font) !important;
 	}
 
     .secondary-bg{

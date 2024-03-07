@@ -37,8 +37,13 @@ body{
 .accent-color{
   color: var(--accent-color);
 }
+
+.searchbar-grey{
+  background-color: var(--searchbar-grey) !important;
+}
+
 .primary-font{
-  color: var(--primary-font);
+  color: var(--primary-font) !important;
 }
 
 .secondary-font{
@@ -74,14 +79,17 @@ body{
 }
 
 ::placeholder {
-  color: var(--primary-font);
+  color: var(--tertiary-font) !important;
   opacity: 1; 
 }
 
 ::-ms-input-placeholder { 
-  color: var(--primary-font);
+  color: var(--tertiary-font);
 }
 
+.route-btn{
+  height: 2.5rem;
+}
 .logo {
   background-image: url('../src/assets/images/logo.png');
   background-size: contain;
