@@ -81,8 +81,9 @@ body{
 ::-ms-input-placeholder { 
   color: var(--primary-font);
 }
-.logo{
-  background-image: url('./src/assets/images/logo.png');
+
+.logo {
+  background-image: url('../src/assets/images/logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
