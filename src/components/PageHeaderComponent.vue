@@ -1,5 +1,6 @@
 <script setup>
     import IconLogo from './icons/IconLogo.vue';
+    import Utilities from '@/assets/services/Utilities';
 </script>
 
 <script>
@@ -13,19 +14,7 @@
 
         methods:{
             iconSetter(icon) {
-                switch (icon) {
-                    case 'Overview':
-                        return 'bi-house-door';
-                    break;
-                    case 'Content Management':
-                        return 'bi-file-richtext';
-                    break;
-                    case 'Site Settings':
-                        return 'bi-gear';
-                    break;
-                    default:
-                    break;
-                }
+                return Utilities.iconSetter(icon);
             }
         }
 
