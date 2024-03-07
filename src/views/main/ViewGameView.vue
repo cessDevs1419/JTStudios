@@ -10,7 +10,7 @@
                     <div class="container-lg px-0">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="logo m-auto mb-3" :style="{ 'background-image': 'url(' + items.game_logo + ')' }"></div>
+                                <div class="game-logo m-auto mb-3" :style="{ 'background-image': 'url(' + items.game_logo + ')' }"></div>
                                 <div class="accent-color fs-1"> {{ items.title }}</div>
                                 <div class="text-white my-4 description-container sans-font">{{ items.description }}</div>
                                 <div class="row text-white">
@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style scoped>
-.logo{
+.game-logo{
     background-repeat: no-repeat;
     background-size: contain;
     height: 150px;
@@ -95,7 +95,6 @@ export default {
 }
 
 .hero{
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
