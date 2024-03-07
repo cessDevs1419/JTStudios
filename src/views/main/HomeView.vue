@@ -2,6 +2,7 @@
   import TemplateContainer from '@/components/TemplateContainer.vue';
   import SectionHeaderComponent from '@/components/SectionHeaderComponent.vue';
   import IconLogo from '@/components/icons/IconLogo.vue';
+  import Utilities from '@/assets/services/Utilities';
 </script>
 <script>
   export default {
@@ -88,17 +89,8 @@
       }
     },
     methods: {
-      iconSetter(icon){
-        switch(icon){
-          case 'windows':
-            return 'bi-windows'
-          case 'apple':
-            return 'bi-apple'
-          case 'android':
-            return 'bi-android2'
-          case 'linux':
-            return 'bi-ubuntu'
-        }
+      iconSetter(icon) {
+        return Utilities.iconSetter(icon);
       }
     }
   }
