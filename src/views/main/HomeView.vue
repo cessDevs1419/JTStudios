@@ -220,7 +220,7 @@
             </ul>
           </div>
           <div class="col-lg-6">
-            <form class="p-4 sans-font text-white">
+            <form class="p-lg-4 p-0 sans-font text-white">
               <div class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" class="form-control text-white p-2 rounded-0 bg-transparent" >

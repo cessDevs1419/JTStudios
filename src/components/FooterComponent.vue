@@ -75,7 +75,7 @@
                 </div>
             </div>
             <hr class="tertiary-font">
-            <p class="copyright text-center tertiary-font py-2">
+            <p class="copyright text-center tertiary-font py-2 m-0">
                 All Rights Reserved. JT Studios 2023.
             </p>
         </div>
