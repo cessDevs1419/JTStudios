@@ -47,7 +47,7 @@ const router = createRouter({
     },
 	{
 		path: '/admin/site-settings',
-		name: 'site-settings',
+		name: 'Site Settings',
 		component: SiteSettingsView,
 		children: [
 		]

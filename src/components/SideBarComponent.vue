@@ -36,11 +36,11 @@ import IconLogo from './icons/IconLogo.vue';
                     <h6 class="m-0">Game Overview</h6>
                 </router-link>
                 <router-link class="rounded-2 p-3 text-decoration-none primary-font d-flex align-items-center" to="/admin/content-management">
-                    <i class="bi bi-gear me-2"></i>
+                    <i class="bi  me-2"></i>
                     <h6 class="m-0">Content Management</h6>
                 </router-link>
                 <router-link class="rounded-2 p-3 text-decoration-none primary-font d-flex align-items-center" to="/admin/site-settings">
-                    <i class="bi bi-file-richtext me-2"></i>
+                    <i class="bi bi-gear me-2"></i>
                     <h6 class="m-0">Site Settings</h6>
                 </router-link>
             </div>

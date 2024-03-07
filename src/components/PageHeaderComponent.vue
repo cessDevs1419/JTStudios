@@ -2,6 +2,35 @@
     import IconLogo from './icons/IconLogo.vue';
 </script>
 
+<script>
+    export default {
+        props:{
+            title: {
+                type: String,
+                required: true,
+            }
+        },
+
+        methods:{
+            iconSetter(icon) {
+                switch (icon) {
+                    case 'Overview':
+                        return 'bi-house-door';
+                    break;
+                    case 'Content Management':
+                        return 'bi-file-richtext';
+                    break;
+                    case 'Site Settings':
+                        return 'bi-gear';
+                    break;
+                    default:
+                    break;
+                }
+            }
+        }
+
+    }
+</script>
 <template>
     <div>
         <nav class="navbar primary-bg position-fixed p-0 w-100 z-1" data-bs-theme="dark">
@@ -25,11 +54,9 @@
 
                 <div class="body p-0">
                     <div class="title p-0 d-flex align-items-center primary-font">
-                        <i class="bi my-0 bi-house-door fs-2 me-2 "></i>
+                        <i class="bi my-0 fs-2 me-2 " :class="iconSetter(title)"></i>
                         <h2 class="m-0">
-                            <slot name="page-title">
-                                
-                            </slot>
+                            {{ title }}
                         </h2>
                     </div>
                 </div>

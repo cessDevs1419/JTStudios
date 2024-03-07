@@ -9,10 +9,12 @@
   const showNavbar = ref(true);
   const router = useRouter();
   const currentRoutePath = ref(router.currentRoute.value.path);
+  const pageTitle = ref()
 
   watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
     if (newValue !== oldValue) {
       currentRoutePath.value = newValue;
+      pageTitle.value = router.currentRoute.value.name;
       showNavbar.value = !newValue.startsWith('/admin');
     }
   });
@@ -24,9 +26,6 @@
     components: {
       PageHeaderComponent,
       SideBarComponent
-    },
-    methods: {
-      
     }
   }
 </script>
@@ -41,9 +40,7 @@
     </SideBarComponent>
 
     <div class="container-fluid mt-0 p-0">
-      <PageHeaderComponent v-if="!showNavbar" >
-        <template #page-title>
-        </template>
+      <PageHeaderComponent :title="pageTitle" v-if="!showNavbar" >
       </PageHeaderComponent>
   
       <RouterView />
