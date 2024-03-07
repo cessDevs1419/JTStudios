@@ -53,6 +53,6 @@
     </div>
   </div>
 
-  <FooterComponent></FooterComponent>
+  <FooterComponent v-if="showNavbar"></FooterComponent>
   
 </template>

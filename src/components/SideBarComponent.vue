@@ -1,4 +1,6 @@
 <script setup>
+import IconLogo from './icons/IconLogo.vue';
+
 
 </script>
 <script>
@@ -20,13 +22,7 @@
     <div class="sidebar secondary-bg border-0" :class="{ 'sidebar-active': isSidebarActive }" >
         <button @click="toggleSidebar" class="bg-transparent border-0 p-0 w-100">
             <div class=" d-flex justify-content-around align-items-center border border-top-0 border-start-0 border-end-0 p-5 px-md-4">
-                <div class="logo">
-    
-                </div>
-                <div class="divider"></div>
-                <div class="title">
-                    <h2 class=" text-white m-0">JT STUDIOS</h2>
-                </div>
+                <IconLogo class=""></IconLogo>
             </div>
         </button>
         <div class="nav-items p-4">
