@@ -9,13 +9,16 @@
   const showNavbar = ref(true);
   const router = useRouter();
   const currentRoutePath = ref(router.currentRoute.value.path);
+  const pageTitle = ref()
 
   watch(() => router.currentRoute.value.path, (newValue, oldValue) => {
     if (newValue !== oldValue) {
       currentRoutePath.value = newValue;
+      pageTitle.value = router.currentRoute.value.name;
       showNavbar.value = !newValue.startsWith('/admin');
     }
   });
+
 </script>
 
 <script>
@@ -23,15 +26,6 @@
     components: {
       PageHeaderComponent,
       SideBarComponent
-    },
-    methods: {
-      showSidebar() {
-        if (this.$refs.sidebar) {
-          this.$refs.sidebar.toggleSidebar();
-        } else {
-          console.error("Sidebar component not found.");
-        }
-      }
     }
   }
 </script>
@@ -42,11 +36,11 @@
   </NavbarComponent>
 
   <div class="d-flex mt-0 p-0">
-    <SideBarComponent ref="sidebar" v-if="!showNavbar" >
+    <SideBarComponent v-if="!showNavbar" >
     </SideBarComponent>
 
     <div class="container-fluid mt-0 p-0">
-      <PageHeaderComponent v-if="!showNavbar" @show-side-bar="showSidebar" >
+      <PageHeaderComponent :title="pageTitle" v-if="!showNavbar" >
       </PageHeaderComponent>
   
       <RouterView />

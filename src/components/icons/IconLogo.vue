@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>          
 <a class="text-decoration-none logo-container m-0 p-0">
     <div class="w-100 d-flex align-items-center m-0 p-0 ">
@@ -17,15 +20,6 @@
     .logo-container{
         width: 100%;
         max-width: fit-content;
-    }
-
-    .logo{
-        background-image: url('./src/assets/images/logo.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 48px;
-        height: 45px;
     }
 
     .divider{
