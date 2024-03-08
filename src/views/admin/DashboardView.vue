@@ -14,6 +14,28 @@
                         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, felis euismod consectetur iaculis, nisl purus facilisis urna, nec posuere eros lacus in erat.',
                         images:'./src/assets/images/sample_hero.png',
                         official_link: '',
+                        status: '',
+                        platforms: [
+                        {
+                            type: 'windows',
+                            link: ''
+                        },
+                        {
+                            type: 'apple',
+                            link: ''
+                        },
+                        {
+                            type: 'android',
+                            link: ''
+                        }
+                        ]
+                    },
+                    {
+                        title:'Lucid Melody',
+                        description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, felis euismod consectetur iaculis, nisl purus facilisis urna, nec posuere eros lacus in erat.',
+                        images:'./src/assets/images/sample_hero.png',
+                        official_link: '',
+                        status: 'UNPUBLISHED',
                         platforms: [
                         {
                             type: 'windows',
@@ -34,6 +56,7 @@
                         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, felis euismod consectetur iaculis, nisl purus facilisis urna, nec posuere eros lacus in erat.',
                         images:'./src/assets/images/sample_hero.png',
                         official_link: '',
+                        status: 'HIDDEN',
                         platforms: [
                         {
                             type: 'windows',
@@ -73,12 +96,12 @@
                         </span>
                         <input type="text" class="form-control rounded-start-0 border-0 rounded-2 border-start-0 tertiary-font searchbar-grey" placeholder="Search . . " aria-label="Search" >
                     </div>
-                    <router-link to="/admin/add-game"class="route-btn d-flex align-items-center text-decoration-none btn btn-danger rounded-2 mx-0 mx-md-2 rounded-0 px-4 accent-bg accent-border ">
+                    <router-link to="/admin/add-game" class="route-btn d-flex align-items-center text-decoration-none btn btn-danger rounded-2 mx-0 mx-md-2 rounded-0 px-4 accent-bg accent-border ">
                         <i class="bi bi-plus fs-3 secondary-font"></i> <p class="m-0 text-nowrap secondary-font">Add Game</p>
                     </router-link>
                 </div>
             </div>
-            <div class="row w-100 m-auto">
+            <div class="row w-100 m-auto mt-5 px-0">
                 <div v-for="(items, index) in sampleData" :key="index" class="col-xl-4 col-lg-6 m-auto mb-3">
                     <GameCardComponent
                         :data="items"

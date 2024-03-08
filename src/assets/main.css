@@ -37,6 +37,13 @@ body{
 .accent-color{
   color: var(--accent-color);
 }
+.light-grey-border{
+  border-color: var(--tertiary-font) !important;
+}
+
+.light-grey-bg{
+  background-color: var(--tertiary-font) ;
+}
 
 .searchbar-grey{
   background-color: var(--searchbar-grey) !important;
@@ -57,7 +64,10 @@ body{
 .accent-font {
   color: var(--accent-color);
 }
-
+.light-grey-font{
+  color: var(--tertiary-color);
+  
+}
 .footer-bg {
   background-color: #252525;
 }
@@ -68,6 +78,9 @@ body{
 
 .dark-grey-bg{
   background-color: var(--dark-grey);
+}
+.dark-grey-subtle-bg{
+  background-color: var(--dark-grey-subtle);
 }
 
 .cursor-pointer{
