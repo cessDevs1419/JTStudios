@@ -27,6 +27,7 @@
             </div>
         </div>
         <div class="card-footer">
+        
         </div>
     </div>
 </template>
