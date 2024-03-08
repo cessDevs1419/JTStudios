@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/main/HomeView.vue'
 
+import ViewGameView from '@/views/main/ViewGameView.vue'
 import AboutView from '@/views/main/AboutView.vue'
 import NewGameView from '@/views/admin/NewGameView.vue'
 import DashboardView from '@/views/admin/DashboardView.vue'
@@ -24,11 +25,16 @@ const router = createRouter({
 	{
 		path: '/games',
 		name: 'games',
-		component: OurGames
+		component: OurGames,
+    },
+	{
+		path: '/view-game',
+		name: 'view-game',
+		component: ViewGameView,
     },
     {
 		path: '/admin',
-		name: 'dashboard',
+		name: 'Overview',
 		component: DashboardView,
 		children: [
 			{
@@ -40,14 +46,14 @@ const router = createRouter({
     },
 	{
 		path: '/admin/content-management',
-		name: 'content-management',
+		name: 'Content Management',
 		component: ContentManagementView,
 		children: [
 		]
     },
 	{
 		path: '/admin/site-settings',
-		name: 'site-settings',
+		name: 'Site Settings',
 		component: SiteSettingsView,
 		children: [
 		]
