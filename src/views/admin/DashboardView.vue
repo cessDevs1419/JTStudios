@@ -35,7 +35,7 @@
                         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, felis euismod consectetur iaculis, nisl purus facilisis urna, nec posuere eros lacus in erat.',
                         images:'./src/assets/images/sample_hero.png',
                         official_link: '',
-                        status: 'UNPUBLISHED',
+                        status: 'Unpublished',
                         platforms: [
                         {
                             type: 'windows',
@@ -56,7 +56,7 @@
                         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat, felis euismod consectetur iaculis, nisl purus facilisis urna, nec posuere eros lacus in erat.',
                         images:'./src/assets/images/sample_hero.png',
                         official_link: '',
-                        status: 'HIDDEN',
+                        status: 'Hidden',
                         platforms: [
                         {
                             type: 'windows',
@@ -107,7 +107,7 @@
                         :data="items"
                     ></GameCardComponent>
                 </div>
-            </div>
+        </div>
         </div>
     </AdminContainerComponent>
 </template>

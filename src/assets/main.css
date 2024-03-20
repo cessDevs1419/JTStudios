@@ -26,7 +26,7 @@ body{
   background-color: var(--tertiary-color);
 }
 .accent-bg{
-  background-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
 }
 .accent-border{
   border-color: var(--accent-color);

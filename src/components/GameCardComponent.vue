@@ -21,7 +21,7 @@
     <div class="card dark-grey-bg m-auto" >
         <div class="card-header w-100 position-relative p-0 m-0">
             <div class="status-container position-absolute mt-2 ms-2 primary-bg border border-2 rounded-3 light-grey-border px-2 py-1">
-                <h6 class="m-0 accent-color fw-light" v-if="data.status">{{data.status}}</h6>
+                <h6 class="m-0 accent-color fw-light" v-if="data.status">{{data.status.toUpperCase()}}</h6>
             </div>
             <img :src="data.images" class="card-img-top" alt="...">
         </div>
@@ -39,7 +39,7 @@
                 <button class="btn-action btn btn-danger border-0 light-grey-bg me-2  p-0">
                     <i class="bi bi-trash primary-font fs-5 m-0 "></i>
                 </button>
-                <button class="btn-action btn btn-danger border-0 light-grey-bg me-2  p-0">
+                <button :class="{'accent-bg': data.status === 'Hidden'}" class="btn-action btn btn-danger border-0 light-grey-bg me-2  p-0">
                     <i class="bi bi-eye primary-font fs-5 m-0 "></i>
                 </button>
             </div>

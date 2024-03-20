@@ -1,3 +1,10 @@
+<script setup>
+    import AdminContainerComponent from '@/components/AdminContainerComponent.vue';
+</script>
 <template>
-    <div></div>
+    <AdminContainerComponent>
+        <div class="border h-100">
+
+        </div>
+    </AdminContainerComponent>
 </template>

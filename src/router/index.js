@@ -34,12 +34,15 @@ const router = createRouter({
     },
     {
 		path: '/admin',
-		name: 'Overview',
-		component: DashboardView,
 		children: [
 			{
+				path: '',
+				name: 'Overview',
+				component: DashboardView,
+			},
+			{
 				path: 'add-game',
-				name: 'add-game',
+				name: 'Add Game',
 				component: NewGameView,
 			},
 		]
